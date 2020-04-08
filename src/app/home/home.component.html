@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col text-center">
+        <ngb-accordion #acc="ngbAccordion" activeIds="today">
+
+            <ngb-panel id='today' title="Thursday, 9 April" *ngFor='let item of newspaper'>
+                <ng-template ngbPanelContent>
+
+                    <div class="row">
+                        <div class="col-3" (click)='view_paper(newsdata.pdf)' *ngFor='let newsdata of item.data'>
+                            <div class="card shadow-sm" [ngClass]="newsdata.color"
+                                (mouseover)="newsdata.color='shadow-lg'" (mouseout)="newsdata.color=''">
+                                <img src="{{newsdata.thumbnail_url}}" class="newspaper-thumbnail"
+                                    alt="Indian Express ePaper">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </ng-template>
+            </ngb-panel>
+
+        </ngb-accordion>
+    </div>
+</div>
