@@ -2,7 +2,7 @@
     <div class="col text-center">
         <ngb-accordion #acc="ngbAccordion" activeIds="today">
 
-            <ngb-panel id='today' title="Thursday, 9 April" *ngFor='let item of newspaper'>
+            <ngb-panel id='today' title="{{ get_date_object(item.date) | date }}" *ngFor='let item of newspaper'>
                 <ng-template ngbPanelContent>
 
                     <div class="row">

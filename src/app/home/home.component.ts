@@ -25,7 +25,14 @@ export class HomeComponent implements OnInit {
   newspaper: any
 
   ngOnInit(): void {
-    this.newspaper = this.ns.fetch_daily_news()
+    this.ns.fetch_daily_news().then(data => {
+      this.newspaper = data
+      console.log(data)
+    })
+  }
+
+  get_date_object(date_string) {
+    return new Date(date_string)
   }
 
   view_paper(pdf: string) {
