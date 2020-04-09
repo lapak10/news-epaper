@@ -1,12 +1,14 @@
 <div class="row">
     <div class="col text-center">
-        <ngb-accordion #acc="ngbAccordion" activeIds="today">
+        <ngb-accordion #acc="ngbAccordion" activeIds="today0">
 
-            <ngb-panel id='today' title="{{ get_date_object(item.date) | date }}" *ngFor='let item of newspaper'>
+            <ngb-panel id='today{{i}}' title="{{ get_date_object(item.date) | date }}"
+                *ngFor='let item of newspaper;let i=index;'>
                 <ng-template ngbPanelContent>
 
                     <div class="row">
-                        <div class="col-3" (click)='view_paper(newsdata.pdf)' *ngFor='let newsdata of item.data'>
+                        <div class="col-3" placement="top" ngbTooltip="{{newsdata.publisher | titlecase}}"
+                            (click)='view_paper(newsdata.pdf)' *ngFor='let newsdata of item.data'>
                             <div class="card shadow-sm" [ngClass]="newsdata.color"
                                 (mouseover)="newsdata.color='shadow-lg'" (mouseout)="newsdata.color=''">
                                 <img src="{{newsdata.thumbnail_url}}" class="newspaper-thumbnail"
