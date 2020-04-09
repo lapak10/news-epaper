@@ -1,5 +1,30 @@
 [
     {
+        "date": "2020-04-09",
+        "data": [
+            {
+                "publisher": "the indian express",
+                "pdf": "https://pdf.indianexpress.com/pdfupload/icici/ie-delhi-09-04-2020.pdf#page=2",
+                "thumbnail_url": "https://pdf.indianexpress.com/pdfupload/icici/images/ie-delhi-09-04-2020.jpg"
+            },
+            {
+                "publisher": "jansatta",
+                "pdf": "https://drive.google.com/file/d/1J3lH_HWRVaU-28ZxbrgkH4MxiSD_wJ3_/view",
+                "thumbnail_url": "https://d2na0fb6srbte6.cloudfront.net/read/imageapi/coverforissue/2627137/newspaper/600"
+            },
+            {
+                "publisher": "the indian express",
+                "pdf": "https://pdf.indianexpress.com/pdfupload/icici/fe-delhi-09-04-2020.pdf#page=2",
+                "thumbnail_url": "https://pdf.indianexpress.com/pdfupload/icici/images/fe-delhi-09-04-2020.jpg"
+            },
+            {
+                "publisher": "the indian express",
+                "pdf": "https://todayspaper.hindustantimes.com/Pages/icici/Delhi/09-04-2020-Delhi.pdf#page=2",
+                "thumbnail_url": "https://todayspaper.hindustantimes.com/Pages/icici/Delhi/09-04-2020-Delhi.jpg"
+            }
+        ]
+    },
+    {
         "date": "2020-04-08",
         "data": [
             {
